@@ -1,0 +1,72 @@
+  .contactimg{
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/pexels-photo-1435075.jpeg);
+    min-height: 100%;
+  }
+  
+  .Thankyou{
+     margin: 10px auto 100px;
+     padding-top:25px;
+     text-align: center;
+     width: 600px;
+   }
+
+  input[type=text] {
+     border: none;
+     font-family: $font;
+     margin-top: 6px; 
+     width: 80%; 
+   }
+  
+   #input_img{
+       width:24px;
+       height:24px;
+   }
+  
+   textarea {
+     border: none;
+     font-family: $font;
+     height: 100px;
+     margin-top: 6px;
+     width: 100%; 
+     resize: vertical; 
+   }
+  
+   textarea:focus, input:focus{
+     outline: none;
+   }
+  
+   .inputimg{
+     float: right;
+     height: 25px;
+     vertical-align: top;
+   }
+  
+  .inputwraper{
+     border-top: 1px solid $lightGray; 
+     border-bottom: none;
+     border-left: none;
+     border-right: none;
+     padding: 12px;
+   }
+
+   .inputimg-valid{
+     float: right;
+     height: 25px;
+     vertical-align: top;
+    }
+  
+   .inputimg-error{
+     float: right;
+     height: 25px;
+     vertical-align: top;
+   }
+  
+   .show{
+     visibility: visible;
+   }
+  
+   .dontShow{
+     visibility: hidden;
+   }

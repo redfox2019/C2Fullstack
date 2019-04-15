@@ -1,0 +1,46 @@
+ .postimg{
+   background-position: center;
+   background-size: cover;
+   background-image: url(../images/astronomy-beautiful-clouds-355465.jpg);
+   min-height: 100%;
+ }
+
+.postImg{
+    @media screen and (max-width: $break-small) {  
+    max-width: 100%;
+    min-width: 300px; 
+    
+    }
+}
+.postImgCaption{
+    color: $postDescriptionColor;
+    text-align: center;
+    width: 100%;
+}
+
+.postCenter{
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px 40px 10px;
+    text-align: left;
+    width: 40%;
+    @media screen and (max-width: $break-small) {
+    width: 100%
+    }
+    h1{
+        margin-bottom: 0;
+    @media screen and (max-width: $break-small) {
+        font-size: 45px; 
+        }
+    }
+    hr{
+        height: 2px;
+        width: 10%;
+    }
+}
+
+.postDescription{
+    border-left: $postDescriptionColor solid 3px;
+    color: $postDescriptionColor;
+    padding-left: 10px;
+  }

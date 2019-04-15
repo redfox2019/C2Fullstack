@@ -1,0 +1,150 @@
+$font: 'Open Sans', sans-serif;
+$lightGray :  #f2f5f9;
+$descriptionColor : #7a7f87;
+$buttonBorderColor : #e7e7e7;
+$stickyColor : #edf1f9;
+$postDescriptionColor: #c3ccd8;
+$break-small: 600px;
+
+body {
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: $break-small) {
+      display: flex;
+      flex-wrap: wrap;
+    } 
+      hr{
+        background-color: $lightGray;
+        border: none;
+        color:$lightGray;
+        height: 1px;
+      }
+  }
+
+   .homeimg {
+     background-position: center;
+     background-size: cover;
+     background-image: url(../images/pexels-photo-327064.jpeg);
+     min-height: 100%;
+   }
+
+   .header{
+     height: auto;
+     margin: auto;
+     width: 100%;
+     h1{
+         font-size: 52px;
+     }
+     .tag{
+       color: white;
+       font-style: oblique;
+       text-align: left;   
+     }
+   }
+
+   .headerCenter{
+     color: #fff;
+     margin: auto;
+     padding: 10px 40px 40px 10px;
+     text-align: center;
+     width: 50%; 
+     @media screen and (max-width: $break-small) {
+       width: 60%; 
+     }
+     h1{
+        margin-bottom: 0;
+        @media screen and (max-width: $break-small) {
+          font-size: 35px;
+        }
+      }
+    hr{
+       height: 2px;
+       width: 10%;
+       @media screen and (max-width: $break-small) {
+           width: 30%;
+        }
+      }
+  }
+  
+
+
+   .content {
+     margin: 10px auto 100px;
+     padding-top:25px;
+     width: 600px;
+     @media screen and (max-width: $break-small) {
+       width: 300px;
+     }
+   }
+  
+   .description{
+     color: $descriptionColor;
+   }
+  
+   
+   .tag{
+     color: $descriptionColor;
+     font-style: oblique;
+  }
+
+   .rightButton{
+     background-color: white;
+     border: 1px solid $buttonBorderColor;
+     color: black; 
+     float: right;
+     font-weight: bold;
+     padding: 10px;
+     text-transform: uppercase;
+   }
+
+   .leftButton{
+     background-color: white;
+     border: 1px solid $buttonBorderColor;
+     color: black; 
+     float: left;
+     font-weight: bold;
+     padding: 10px;
+     text-transform: uppercase;
+   }
+
+   footer{
+     padding: top 25px;
+     text-align: center;
+     @media screen and (max-width: $break-small) {
+       height: auto;
+       margin: auto;
+     }
+   }
+
+   .footerCenter{
+     padding-top: 25px;
+     @media screen and (max-width: $break-small) {
+      padding-right: 25px;
+     }
+   }
+
+   .socialIcon{
+     height: 25px;
+     width: 25px;
+     @media screen and (max-width: $break-small) {
+       padding-right: 10px;
+      }
+   }
+  
+   .copyRight{
+     color: $descriptionColor;
+     font-weight: lighter !important;
+     padding-top:10px;
+     @media screen and (max-width: $break-small) {
+       text-align: justify;
+     }
+   }
+  
+   
+
+
+  @import 'menu';
+  @import 'about';
+  @import 'post';
+  @import 'contact';
